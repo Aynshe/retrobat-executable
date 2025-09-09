@@ -20,7 +20,7 @@ namespace RetroBat
         [STAThread]
         static void Main()
         {
-            string appFolder = AppDomain.CurrentDomain.BaseDirectory;
+            string appFolder = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             Directory.SetCurrentDirectory(appFolder);
 
             string exeName = Path.GetFileName(Process.GetCurrentProcess().MainModule.FileName);

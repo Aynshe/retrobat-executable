@@ -155,6 +155,8 @@ namespace RetroBat
             _timer?.Dispose();
             _timer = null;
 
+            AudioMixer.UnmuteEmulationStation();
+
             base.Dispose(disposing);
 
             var exe = Process.GetProcessesByName("emulationstation").FirstOrDefault();

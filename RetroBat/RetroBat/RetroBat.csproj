@@ -55,6 +55,7 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AudioMixer.cs" />
     <Compile Include="FocusHelper.cs" />
     <Compile Include="IniReader.cs" />
     <Compile Include="Program.cs" />

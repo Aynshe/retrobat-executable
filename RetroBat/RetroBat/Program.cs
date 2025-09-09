@@ -245,6 +245,7 @@ namespace RetroBat
                 SimpleLogger.Instance.Info("Launching " + emulationStationExe + " " + args);
 
                 var exe = Process.Start(start);
+                AudioMixer.MuteEmulationStation();
 
                 IntPtr esHandle = IntPtr.Zero;
                 int retries = 0;
